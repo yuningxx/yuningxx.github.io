@@ -1,0 +1,165 @@
+body {
+    margin: 0%;
+}
+
+.nav {
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    opacity: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+}
+
+#logo {
+    height: 100%;
+    width: auto;
+    position: relative;
+    left: 10%;
+}
+
+.nav--title {
+    position: absolute;
+    left: 18%;
+    top: 10%;
+    color: rgb(230, 232, 232);
+    font-family: 'Smokum';
+    font-size: 50px;
+}
+
+.nav--button {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    color: #FDE74C;
+    font-family: 'Gabriela';
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    top: 37%;
+}
+
+.nav--button__click {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav--button__click:hover {
+    cursor: pointer;
+}
+
+.main {
+    background-color: #FDE74C;
+}
+
+.welcome #background {
+    width: 100%;
+    opacity: 0.35;
+
+}
+
+.welcome--text {
+    position: absolute;
+    font-family: 'Gabriela';
+    font-size: 50px;
+    top: 30%;
+    left: 25%;
+    text-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
+    color: #2C363F;
+
+}
+
+.showings {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.showings--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    margin: 20px;
+}
+
+.showings--text {
+    width: 30%;
+}
+
+.showings--item__name {
+    font-family: 'Gabriela';
+    text-shadow: 1px 1px 2px #2C363F;
+    font-size: 25px;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+
+.showings--item__detail {
+    font-family: 'Gabriela';
+    padding-left: 10%;
+}
+
+.showings--item img {
+    display: block;
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+
+.showings--button {
+    background-color: #D76A03;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+
+    text-align: center;
+    color: white;
+    font-family: 'Georama';
+    
+    position: relative;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.showings--button:hover {
+    cursor: pointer;
+    color: #FDE74C;
+}
+
+
+.menu--arrow {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    animation: jump 1s linear infinite;
+    
+}
+
+.menu--arrow:hover {
+    cursor: pointer;
+}
+
+.menu--text {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-family: 'Georama';
+    font-size: 25px;
+    animation: jump 1s linear infinite;
+}
+
+@keyframes jump {
+    0% { transform: translateY(10px)}
+    50% { transform: translateY(0px)}
+    100% { transform: translateY(10px)}
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color:#FDE74C;
+}

@@ -1,0 +1,108 @@
+body {
+    margin: 0%;
+}
+
+.nav {
+    height: 10%;
+    width: 100%;
+    background-color:#FDE74C;
+    opacity: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+}
+
+#logo {
+    height: 100%;
+    width: auto;
+    position: relative;
+    left: 10%;
+}
+
+.nav--title {
+    position: absolute;
+    left: 18%;
+    top: 10%;
+    color: rgb(230, 232, 232);
+    font-family: 'Smokum';
+    font-size: 50px;
+}
+
+.nav--button {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    color: black;
+    font-family: 'Gabriela';
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    top: 37%;
+}
+
+.nav--button__click {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav--button__click:hover {
+    cursor: pointer;
+}
+
+.main {
+    position: relative;
+}
+
+h1 {
+    display: block;
+    position: absolute;
+    margin-left: 40%;
+    font-family: 'Georama';
+    font-size: 40px;
+}
+
+.showings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10%;
+    padding-left: 10%;
+}
+
+.showings--item {
+    height: 20%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;    
+}
+
+.showings--item img {
+    display: block;
+    height: 80%;
+    width: 50%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.name {
+    font-family: 'Gabriela';
+    font-size: 25px;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.detail {
+    font-family: 'Gabriela';
+    text-align: center;
+    padding-top: 10px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
