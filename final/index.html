@@ -1,6 +1,134 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        FINAL
-    </body>
-</html>
+<head>
+    <title>GioGuesser</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="assets/scripts/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sigmar|Indie+Flower|Noto+Serif">
+</head>
+
+<body>
+    <div class="background">
+        <div class="ribbon">
+            <img id="odd" src="assets/images/yellow_wide_8.png">
+            <img id="even" src="assets/images/yellow_wide_8.png">
+            <img id="odd" src="assets/images/yellow_wide_8.png">
+            <img id="even" src="assets/images/yellow_wide_8.png">
+            <img id="odd" src="assets/images/yellow_wide_8.png">
+            <img id="even" src="assets/images/yellow_wide_8.png">
+            <img id="odd" src="assets/images/yellow_wide_8.png">
+            <img id="even" src="assets/images/yellow_wide_8.png">
+            <img id="odd" src="assets/images/yellow_wide_8.png">
+            <img id="even" src="assets/images/yellow_wide_8.png">
+        </div>
+    </div>
+    <div class="container" id="start-menu">
+        <div class="h1">Welcome to GioGuesser!</div>
+        <div class="rules"> 
+            <div class="h2"></div>
+            <p class="text">The rule of the game is very simple. <br>
+             I show you a picture. <br>
+            You select the location <br> 
+            where you think the picture was taken.
+            </p>
+        </div>
+        
+        <button class="start-btn" onclick="startQuiz()">Start</button>
+    </div>
+    
+    <div class="container hidden" id="quiz1">
+        <div class="h1" id="question-title">Question 1</div>
+        <div class="picture"> 
+            <img src="assets/images/people.jpg" height="300px">
+        </div>
+        <div class="choices">
+            <button class="answer" onclick="submitQ1('D.C.')">D.C.</button>
+            <button class="answer" onclick="submitQ1('Oakland')">Oakland</button>
+            <button class="answer" onclick="submitQ1('S.F.')">S.F.</button>
+        </div>
+    </div>
+    
+    <div class="container hidden" id="quiz2">
+        <div class="h1" id="question-title">Question 2</div>
+        <div class="picture"> 
+            <img src="assets/images/snow.jpg" height="300px">
+        </div>
+        <div class="choices">
+            <button class="answer" onclick="submitQ2('Colorado')">Colorado</button>
+            <button class="answer" onclick="submitQ2('Alaska')">Alaska</button>
+            <button class="answer" onclick="submitQ2('Iceland')">Iceland</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="quiz3">
+        <div class="h1" id="question-title">Question 3</div>
+        <div class="picture"> 
+            <img src="assets/images/boats.jpg" height="300px">
+        </div>
+        <div class="choices">
+            <button class="answer" onclick="submitQ3('Berkeley')">Berkeley</button>
+            <button class="answer" onclick="submitQ3('Seattle')">Seattle</button>
+            <button class="answer" onclick="submitQ3('L.A.')">L.A.</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="quiz4">
+        <div class="h1" id="question-title">Question 4</div>
+        <div class="picture"> 
+            <img src="assets/images/road.jpg" height="300px">
+        </div>
+        <div class="choices">
+            <button class="answer" onclick="submitQ4('Boston')">Boston</button>
+            <button class="answer" onclick="submitQ4('San Jose')">San Jose</button>
+            <button class="answer" onclick="submitQ4('Berkeley')">Berkeley</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="quiz5">
+        <div class="h1" id="question-title">Question 5</div>
+        <div class="picture"> 
+            <img src="assets/images/towers.jpg" height="300px">
+        </div>
+        <div class="choices">
+            <button class="answer" onclick="submitQ5('Vancouver')">Vancouver</button>
+            <button class="answer" onclick="submitQ5('Seattle')">Seattle</button>
+            <button class="answer" onclick="submitQ5('S.F.')">S.F.</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="quiz6">
+        <div class="h1" id="question-title">Question 6</div>
+        <div class="picture"> 
+            <img src="assets/images/sunset.jpg" height="300px">
+        </div>
+        <div class="choices">
+            <button class="answer" onclick="submitQ6('Berkeley')">Berkeley</button>
+            <button class="answer" onclick="submitQ6('Boston')">Boston</button>
+            <button class="answer" onclick="submitQ6('Baltimore')">Baltimore</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="quiz7">
+        <div class="h1" id="question-title">Question 7</div>
+        <div class="picture"> 
+            <img src="assets/images/swiss.jpg" height="300px">
+        </div>
+        <div class="choices">
+            <button class="answer" onclick="submitQ7('California')">California</button>
+            <button class="answer" onclick="submitQ7('Switzerland')">Switzerland</button>
+            <button class="answer" onclick="submitQ7('China')">China</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="finish">
+        <div class="h1">Congratulations!</div>
+        <div class="rules"> 
+            <div class="h2"></div>
+            <p class="text">You have correctly guessed</p>
+            <p class="text"> <span id="final-score"></span> out of 7 locations!</p>
+            <p class="text">How incredibly smart you are!</p>
+        </div>
+        
+        <button class="start-btn restart-btn" onclick="restartQuiz()">Try Again!</button>
+        <p class="text" id="credit">Inspired by the real <a href="https://www.geoguessr.com/">Geoguessr</a> game. </p>
+    </div>
+</body>
